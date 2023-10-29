@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const tip = (bill * percentage) / 100;
         const total = bill + tip;
 
-        billTotal.value=parseFloat(billTotal.value);
+        //billTotal.value=parseFloat(billTotal.value);
         tipPercentage.value = percentage + "%";
         tipAmount.value = tip.toFixed(2);
         totalWithTip.value = total.toFixed(2);
