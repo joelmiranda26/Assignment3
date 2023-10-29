@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
     tipForm.addEventListener("input", function () {
         const bill = parseFloat(billTotal.value);
         const percentage = tipSlider.value;
-        if (isNaN(bill)) {
+        if (isNaN(billTotal)) {
             alert("Please enter a valid number for the Bill Total.");
+            billTotal.value= "";
             tipPercentage.value = "";
             tipAmount.value = "";
             totalWithTip.value = "";
