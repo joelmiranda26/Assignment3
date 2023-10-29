@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const percentage = tipSlider.value;
         if (isNaN(bill)) {
             alert("Please enter a valid number for the Bill Total.");
+            billTotal.value= "";
             tipPercentage.value = "";
             tipAmount.value = "";
             totalWithTip.value = "";
